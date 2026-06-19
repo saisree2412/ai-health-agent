@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>health-agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>health-agent</h1>
+    <span class="subtitle">personal health tracker · verifier-gated suggestions</span>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <section>
+        <h2>Profile</h2>
+        <div id="profile-content" class="loading">loading…</div>
+      </section>
+
+      <section>
+        <h2>Today · macros</h2>
+        <div id="today-content" class="loading">loading…</div>
+      </section>
+
+      <section>
+        <h2>Today · micros</h2>
+        <div id="micros-content" class="loading">loading…</div>
+      </section>
+
+      <section>
+        <h2>Recent meals</h2>
+        <div id="meals-content" class="loading">loading…</div>
+      </section>
+    </aside>
+
+    <section id="chat">
+      <div id="chat-log">
+        <div class="msg agent">
+          <div class="role">agent</div>
+          <div class="body">
+            Hi! Tell me what you've eaten, what supplements you've taken, or ask me about your day.
+            Try: <em>"had 2 slices pepperoni pizza for lunch"</em>.
+          </div>
+        </div>
+      </div>
+      <form id="chat-form">
+        <input id="chat-input" placeholder="what did you eat? (or ask anything)" autocomplete="off" required>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
